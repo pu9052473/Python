@@ -8,13 +8,12 @@
 # pop: Pop the last element from the list.
 # reverse: Reverse the list.
 
-
 n = int(input())
 my_list = []
 for i in range(n):
     commands = input().split()
     method = str(commands[0].lower())
-    print(method)
+    # print(method)
     if method == "insert":
         my_list.insert(int(commands[1]), int(commands[2]))
     elif method == "print":
